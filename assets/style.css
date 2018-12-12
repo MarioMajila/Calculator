@@ -1,0 +1,43 @@
+#container .input{
+    width: 80%;
+    margin: auto;
+    display: block;
+    padding: 4%;
+    margin-bottom: 1px;
+    text-align: right;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: none;
+}
+
+#container hr{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 6px;
+}
+
+#btnBox{
+    width: 90%;
+    margin: auto;
+}
+
+#btnBox #box button{
+    width: 23%;
+    padding: 2%;
+    color: rgba(1, 1, 1, 0.7);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 1px;
+    margin-top: 4px; 
+}
+
+#btnBox #box .operation{
+    background-color: orange;
+    border-color: orange;
+}
+
+#btnBox #box #zero{
+    width: 48%;
+    text-align: left;
+    padding-left: 9%;
+}

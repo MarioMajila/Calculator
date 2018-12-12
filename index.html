@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <div id="container">
+      <div id="inputs">
+        <input type="text" id="inputop" class="input" readonly>
+        <input type="text" id="input" class="input" readonly>
+      </div>
+      <hr>
+      <div id="btnBox">
+          <div id="box">
+              <button id="sqrt" value="sqrt" class="operation">√</button>
+              <button id="pow" value="pow" class="operation">^</button>
+              <button id="mult" value="x" class="operation">x</button>
+              <button id="clean" value="0">c</button>
+            </div>
+        <div id="box">
+          <button id="sept" value="7">7</button>
+          <button id="huit" value="8">8</button>
+          <button id="neuf" value="9">9</button>
+          <button id="div" value="/" class="operation">/</button>
+        </div>
+        <div id="box">
+          <button id="quatre" value="4">4</button>
+          <button id="cinq" value="5">5</button>
+          <button id="six" value="6">6</button>
+          <button id="moins" value="-" class="operation">-</button>          
+        </div>
+        <div id="box">
+          <button id="un" value="1">1</button>
+          <button id="deux" value="2">2</button>
+          <button id="trois" value="3">3</button>
+          <button id="plus" value="+" class="operation">+</button>
+        </div>
+        <div id="box">
+          <button id="zero" value="">0</button>
+          <button id="virgule" value=".">.</button>
+          <button id="egal" value="=" class="operation">=</button>
+        </div>
+      </div>
+  </div>
+    <script>
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
