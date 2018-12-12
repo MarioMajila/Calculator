@@ -25,3 +25,11 @@ const div = document.getElementById("div")
 const racine = document.getElementById("sqrt")
 const puiss = document.getElementById("pow")
 const cleaner = document.getElementById("clean")
+
+// Chargement des événements
+LoadEventListener();
+
+// Initialisation des événements
+function LoadEventListener(){
+    
+}
