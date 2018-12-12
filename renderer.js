@@ -26,6 +26,10 @@ const racine = document.getElementById("sqrt")
 const puiss = document.getElementById("pow")
 const cleaner = document.getElementById("clean")
 
+// Tableaux
+let tableauDesNombres = new Array()
+let tableauDesOperations = new Array()
+
 // Chargement des événements
 LoadEventListener();
 
