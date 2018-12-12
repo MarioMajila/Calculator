@@ -32,9 +32,12 @@ let tableauDesOperations = new Array()
 
 // Chargement des événements
 LoadEventListener();
-
+// ===================================================================================================================
 // Initialisation des événements
+// ===================================================================================================================
+
 function LoadEventListener(){
+    input.value = "0";
     // Chiffres
     bouton0.addEventListener('click', () => {});
 
@@ -74,4 +77,10 @@ function LoadEventListener(){
     cleaner.addEventListener('click', () => {});
 
     egal.addEventListener('click', () => {});
+}
+// ===================================================================================================================
+// Initialisation des fonctions
+// ===================================================================================================================
+function ajouterCaractere(caractere){
+    input.value += caractere;
 }
