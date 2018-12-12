@@ -31,5 +31,43 @@ LoadEventListener();
 
 // Initialisation des événements
 function LoadEventListener(){
+    // Chiffres
+    bouton0.addEventListener('click', () => {});
+
+    bouton1.addEventListener('click', () => {});
+
+    bouton2.addEventListener('click', () => {});
+
+    bouton3.addEventListener('click', () => {});
+
+    bouton4.addEventListener('click', () => {});
+
+    bouton5.addEventListener('click', () => {});
+
+    bouton6.addEventListener('click', () => {});
+
+    bouton7.addEventListener('click', () => {});
+
+    bouton8.addEventListener('click', () => {});
+
+    bouton9.addEventListener('click', () => {});
+
+    virgule.addEventListener('click', () => {});
+
+    // Opération
+    plus.addEventListener('click', () => {});
     
+    moins.addEventListener('click', () => {});
+
+    mult.addEventListener('click', () => {});
+
+    div.addEventListener('click', () => {});
+
+    racine.addEventListener('click', () => {});
+
+    puiss.addEventListener('click', () => {});
+
+    cleaner.addEventListener('click', () => {});
+
+    egal.addEventListener('click', () => {});
 }
