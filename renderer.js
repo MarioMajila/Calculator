@@ -163,7 +163,7 @@ function LoadEventListener(){
 // Initialisation des fonctions
 // ===================================================================================================================
 function ajouterCaractere(caractere){
-    input.value += parseFloat(caractere);
+    input.value += caractere;
 }
 
 function ajouterOperation(entree, operation){
