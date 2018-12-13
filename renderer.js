@@ -39,27 +39,86 @@ LoadEventListener();
 function LoadEventListener(){
     input.value = "0";
     // Chiffres
-    bouton0.addEventListener('click', () => {});
+    bouton0.addEventListener('click', () => {
+        if(input.value === "0"){
+            input.value = input.value;
+        }
+        else{
+            ajouterCaractere(bouton0.value)
+        }
+    });
 
-    bouton1.addEventListener('click', () => {});
+    bouton1.addEventListener('click', () => {
+        if(input.value === "0")
+            input.value = ""
+            
+        ajouterCaractere(bouton1.value)
+    });
 
-    bouton2.addEventListener('click', () => {});
+    bouton2.addEventListener('click', () => {
+        if(input.value === "0")
+        input.value = ""
+        
+        ajouterCaractere(bouton2.value)
+    });
 
-    bouton3.addEventListener('click', () => {});
+    bouton3.addEventListener('click', () => {
+        if(input.value === "0")
+        input.value = ""
+        
+        ajouterCaractere(bouton3.value)
+    });
 
-    bouton4.addEventListener('click', () => {});
+    bouton4.addEventListener('click', () => {
+        if(input.value === "0")
+        input.value = ""
+        
+        ajouterCaractere(bouton4.value)
+    });
 
-    bouton5.addEventListener('click', () => {});
+    bouton5.addEventListener('click', () => {
+        if(input.value === "0")
+        input.value = ""
+        
+        ajouterCaractere(bouton5.value)
+    });
 
-    bouton6.addEventListener('click', () => {});
+    bouton6.addEventListener('click', () => {
+        if(input.value === "0")
+        input.value = ""
+        
+        ajouterCaractere(bouton6.value)
+    });
 
-    bouton7.addEventListener('click', () => {});
+    bouton7.addEventListener('click', () => {
+        if(input.value === "0")
+        input.value = ""
+        
+        ajouterCaractere(bouton7.value)
+    });
 
-    bouton8.addEventListener('click', () => {});
+    bouton8.addEventListener('click', () => {
+        if(input.value === "0")
+        input.value = ""
+        
+        ajouterCaractere(bouton8.value)
+    });
 
-    bouton9.addEventListener('click', () => {});
+    bouton9.addEventListener('click', () => {
+        if(input.value === "0")
+        input.value = ""
+        
+        ajouterCaractere(bouton9.value)
+    });
 
-    virgule.addEventListener('click', () => {});
+    virgule.addEventListener('click', () => {
+        if(input.value === "0"){
+            input.value = input.value;
+        }
+        else{
+            ajouterCaractere(virgule.value)
+        }
+    });
 
     // Opération
     plus.addEventListener('click', () => {});
