@@ -122,13 +122,33 @@ function LoadEventListener(){
     });
 
     // Opération
-    plus.addEventListener('click', () => {});
+    plus.addEventListener('click', () => {
+        if(inputop.value === "0")
+            inputop.value = "";
+
+        ajouterOperation(input.value, plus.value)
+    });
     
-    moins.addEventListener('click', () => {});
+    moins.addEventListener('click', () => {
+        if(inputop.value === "0")
+            inputop.value = "";
 
-    mult.addEventListener('click', () => {});
+        ajouterOperation(input.value, moins.value)
+    });
 
-    div.addEventListener('click', () => {});
+    mult.addEventListener('click', () => {
+        if(inputop.value === "0")
+            inputop.value = "";
+
+        ajouterOperation(input.value, mult.value)
+    });
+
+    div.addEventListener('click', () => {
+        if(inputop.value === "0")
+            inputop.value = "";
+
+        ajouterOperation(input.value, div.value)
+    });
 
     racine.addEventListener('click', () => {});
 
