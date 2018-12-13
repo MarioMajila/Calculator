@@ -35,6 +35,12 @@
     margin-top: 4px; 
 }
 
+#btnBox #box .clean{
+    background-color: rgb(255, 7, 7);
+    border-color: rgb(255, 7, 7);
+    color: rgb(255, 255, 255);
+}
+
 #btnBox #box .operation{
     background-color: orange;
     border-color: orange;
@@ -43,5 +49,5 @@
 #btnBox #box #zero{
     width: 48%;
     text-align: left;
-    padding-left: 9%;
+    padding-left: 8%;
 }
