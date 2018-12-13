@@ -37,7 +37,8 @@ LoadEventListener();
 // ===================================================================================================================
 
 function LoadEventListener(){
-    input.value = "0";
+    input.value = 0;
+    inputop.value = 0;
     // Chiffres
     bouton0.addEventListener('click', () => {
         if(input.value === "0"){
@@ -50,7 +51,7 @@ function LoadEventListener(){
 
     bouton1.addEventListener('click', () => {
         if(input.value === "0")
-            input.value = ""
+            input.value = "";
             
         ajouterCaractere(bouton1.value)
     });
@@ -143,9 +144,14 @@ function LoadEventListener(){
 // Initialisation des fonctions
 // ===================================================================================================================
 function ajouterCaractere(caractere){
-    input.value += caractere;
+    input.value += parseFloat(caractere);
+}
+
+function ajouterOperation(entree, operation){
+    inputop.value += parseFloat(entree) + operation;
+    input.value = 0;
 }
 
 function clean(){
-    input.value = "0";
+    input.value = 0;
 }
