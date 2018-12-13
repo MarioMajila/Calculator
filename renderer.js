@@ -133,7 +133,9 @@ function LoadEventListener(){
 
     puiss.addEventListener('click', () => {});
 
-    cleaner.addEventListener('click', () => {});
+    cleaner.addEventListener('click', () => {
+        clean()
+    });
 
     egal.addEventListener('click', () => {});
 }
@@ -142,4 +144,8 @@ function LoadEventListener(){
 // ===================================================================================================================
 function ajouterCaractere(caractere){
     input.value += caractere;
+}
+
+function clean(){
+    input.value = "0";
 }
