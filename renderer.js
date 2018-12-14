@@ -37,7 +37,7 @@ LoadEventListener();
 // ===================================================================================================================
 
 function LoadEventListener(){
-    input.value = 0;
+    input.value = "0";
     // Chiffres
     bouton0.addEventListener('click', () => {
         if(input.value === "0"){
@@ -115,9 +115,7 @@ function LoadEventListener(){
         if(input.value === "0"){
             input.value = input.value;
         }
-        else{
-            ajouterCaractere(virgule.value)
-        }
+        ajouterCaractere(virgule.value)
     });
 
     // Opération
