@@ -155,7 +155,9 @@ function LoadEventListener(){
         clean()
     });
 
-    egal.addEventListener('click', () => {});
+    egal.addEventListener('click', () => {
+
+    });
 }
 // ===================================================================================================================
 // Initialisation des fonctions
@@ -172,28 +174,12 @@ function ajouterOperation(entree, operation){
     input.value = 0;
 }
 
-function verifierCaractere(chaine, operation){
-    var car = "+-/x";
-
-    for(var i = 0; i < chaine.length; i++){
-        for(operation in car){
-            return tableauDesOperations.push(operation);
-        }
-    }
-}
-
 function calcul(){
-    for(var i = 0; i < tableauDesNombres.length; i++){
-        for(var operation in tableauDesOperations){
-            tableauDesNombres[0] = tableauDesNombres[0] + tableauDesNombres[i+1];
-        }
-    }
-
-    input.value = tableauDesNombres[0];
+    
 }
 
 // Reinitialisation des champs des sorties
 function clean(){
-    input.value = 0;
-    inputop.value = "";
+    input.value = "0";
+    inputop.value = "0";
 }
