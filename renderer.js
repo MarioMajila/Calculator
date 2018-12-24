@@ -26,9 +26,7 @@ const racine = document.getElementById("sqrt")
 const puiss = document.getElementById("pow")
 const cleaner = document.getElementById("clean")
 
-// Tableaux
-let tableauDesNombres = new Array()
-let tableauDesOperations = new Array()
+let resultat = 0;
 
 // Chargement des événements
 LoadEventListener();
@@ -153,7 +151,9 @@ function LoadEventListener(){
 
     egal.addEventListener('click', () => {
         ajouterOperation(input.value, "");
-        calcul();
+        resultat = calcul();
+        input.value = resultat;
+        alert(resultat)
     });
 }
 // ===================================================================================================================
@@ -173,7 +173,7 @@ function ajouterOperation(entree, operation){
 
 function calcul(){
     let result = eval(inputop.value);
-    input.value = result;
+    return result;
 }
 
 // Reinitialisation des champs des sorties
