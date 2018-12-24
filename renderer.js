@@ -120,30 +120,26 @@ function LoadEventListener(){
 
     // Opération
     plus.addEventListener('click', () => {
-        if(inputop.value === "0")
-            inputop.value = "";
 
+        inputop.value = ("0")? "":input.value;
         ajouterOperation(input.value, plus.value)
     });
     
     moins.addEventListener('click', () => {
-        if(inputop.value === "0")
-            inputop.value = "";
-
+        
+        inputop.value = ("0")? "":input.value;
         ajouterOperation(input.value, moins.value)
     });
 
     mult.addEventListener('click', () => {
-        if(inputop.value === "0")
-            inputop.value = "";
-
+        
+        inputop.value = ("0")? "":input.value;
         ajouterOperation(input.value, mult.value)
     });
 
     div.addEventListener('click', () => {
-        if(inputop.value === "0")
-            inputop.value = "";
-
+        
+        inputop.value = ("0")? "":input.value;
         ajouterOperation(input.value, div.value)
     });
 
@@ -156,7 +152,8 @@ function LoadEventListener(){
     });
 
     egal.addEventListener('click', () => {
-
+        ajouterOperation(input.value, "");
+        calcul();
     });
 }
 // ===================================================================================================================
@@ -175,7 +172,8 @@ function ajouterOperation(entree, operation){
 }
 
 function calcul(){
-    
+    let result = eval(inputop.value);
+    input.value = result;
 }
 
 // Reinitialisation des champs des sorties
