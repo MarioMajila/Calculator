@@ -10,9 +10,13 @@ function createWindow () {
   mainWindow = new BrowserWindow({
     width: 300, 
     height: 450,
-    // maxWidth: 300,
-    // maxHeight: 455,
-    title: 'Calculator'
+    maxWidth: 300,
+    maxHeight: 455,
+    resizable: false,
+    transparent: true,
+    focusable: true,
+    title: 'Calculator',
+    focusable: false,
   })
 
   // and load the index.html of the app.
