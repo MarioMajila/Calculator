@@ -12,9 +12,8 @@ function createWindow () {
     height: 450,
     maxWidth: 300,
     maxHeight: 455,
-    resizable: false,
+    resizable: true,
     transparent: true,
-    focusable: true,
     title: 'Calculator',
     focusable: false,
   })

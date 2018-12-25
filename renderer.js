@@ -153,7 +153,6 @@ function LoadEventListener(){
         ajouterOperation(input.value, "");
         resultat = calcul();
         input.value = resultat;
-        alert(resultat)
     });
 }
 // ===================================================================================================================
